@@ -131,7 +131,6 @@ docker-compose up -d
 
 - mysql
 - redis
-- solr
 - 编写生产环境的配置文件
 - 禁止swagger-ui可用
 - 创建图片上传的目录
@@ -182,3 +181,26 @@ docker-compose up -d
 -p 宿主机端口:容器端口：代表把容器里的2020端口映射给宿主机的2020端口。这样做了映射之后，可以通过2020端口访问该项目的主页。
 
 **springboot配置文件application.yml里配置的server:port端口号要跟容器的端口号一致**
+
+## 技术介绍
+
+**后端：** SpringBoot + nginx + docker + SpringSecurity + Swagger2 + Mysql + Redis 
+
+##  开发环境
+
+| 说明              | 开发工具              |
+| ----------------- | --------------------- |
+| Java开发工具IDE   | IDEA                  |
+| API调试工具       | Postman               |
+| MySQL远程连接工具 | SQLyog                |
+| Redis远程连接工具 | Redis Desktop Manager |
+| Linux远程连接工具 | X-shell               |
+| Linux文件上传工具 | filezilla             |
+
+| 开发环境 | 版本               |
+| -------- | ------------------ |
+| JDK      | 1.8                |
+| MySQL    | 5.7.39             |
+| Redis    | latest             |
+| nginx    | stable             |
+| Ubuntu   | Ubuntu 20.04.4 LTS |
