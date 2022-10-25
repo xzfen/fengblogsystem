@@ -1,0 +1,23 @@
+#TODO: 根据环境配置端口号、mysql服务器地址和redis服务器地址
+server:
+  port: 2020
+spring:
+  application:
+    name: feng-blog-system
+  datasource:
+    url: jdbc:mysql://192.168.254.128:3306/sob_blog_system?characterEncoding=utf-8&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123
+  jpa:
+    show-sql: true
+  redis:
+    host: 192.168.254.128
+    port: 6379
+    password: 123456
+#TODO: 配置图片上传路径
+sob.blog.image.save-path: /home/feng/docker/images
+# 2MB
+sob.blog.image.max-size: 2097152
+# swagger
+blog.swagger.enable: false
